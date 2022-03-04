@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { useAuth } from "../contexts/AuthContext"
-import { Button, Image } from 'react-bootstrap'
+import { Button, Image, Col, Row, Card } from 'react-bootstrap'
 import "../style.css"
 
 
@@ -11,6 +11,10 @@ import arrow from "../Images/arrow-1.svg"
 import facebook from "../Images/facebook.svg"
 import instagram from "../Images/Instagram.svg"
 import linkedin from "../Images/Linkedin.svg"
+import goggles from "../Images/land-goggles.svg"
+import cirImg from "../Images/360img.svg"
+import vidGame from "../Images/vidGame.svg"
+import money from "../Images/money.svg"
 
 export default function LandingPage() {
   var headerText = "SIGN IN"
@@ -53,9 +57,55 @@ export default function LandingPage() {
         </div>
         <source media="(min-width:800px)" srcSet={illus1}/>
         <Image className="illus-1" src={illus1}/>
-        
 
       </div>
+        <div className="d-flex justify-content-center align-items-center features">
+        <Row>
+          
+            <Col>
+              <Card id="land-card">
+                <Card.Img className="land-images" variant="top" src={goggles} />
+                <Card.Body>
+                  
+                  <Card.Text id="rs-2-text" >
+                    Experience the new world through VR
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card id="land-card" >
+                <Card.Img className="land-images" variant="top" src={cirImg} />
+                <Card.Body>
+                  
+                  <Card.Text id="rs-2-text">
+                    View all surroundings with 360<span>&#176;</span>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card id="land-card">
+                <Card.Img className="land-images" variant="top" src={vidGame} />
+                <Card.Body>
+                  
+                  <Card.Text id="rs-2-text">
+                    Incredible gaming experience
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card id="land-card">
+                <Card.Img className="land-images" variant="top" src={money} />
+                <Card.Body>
+                  
+                  <Card.Text id="rs-2-text">
+                    Making meetings and tours easier
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+         
+        </Row>
+
+        </div>
       <Footer/>
     </div>
   )

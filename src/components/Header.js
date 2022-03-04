@@ -8,7 +8,7 @@ export default function Header(props) {
     <div >
         <Navbar bg="light" expand="lg" className="py-3  bg-white  " style={{boxShadow: "0px 6px 5px 2px rgba(0, 0, 0, 0.05)", marginBottom:"23px"}}>
             
-                <Navbar.Brand href="/" className="font-tomorrow" style={{marginLeft:"101px", fontWeight:"bold"}}><img
+                <Navbar.Brand href="/" className="font-tomorrow" style={{marginLeft:"6vw", fontWeight:"bold"}}><img
           alt=""
           src="/rsLogo.svg"
           width="50"

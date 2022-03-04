@@ -181,7 +181,34 @@ margin:0px;
 
 color: #1F1449;
 }
-
+#land-card{
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: inset 0px 39px 58px -36px rgba(255, 255, 255, 0.5), inset 0px 7px 11px -4px #FFFFFF, inset 0px -82px 68px -84px rgba(96, 68, 144, 0.3), inset 0px 98px 100px -48px rgba(202, 172, 255, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 4px rgba(238, 51, 221, 0.2);
+    backdrop-filter: blur(100px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: 20px;
+    margin: 15px;
+    height: 300px;
+    width: 500px;
+}
+.land-images{
+    height: 90px;
+    margin-top: 15px;
+}
+.features{
+    padding: 50px;
+}
+.planet-2{
+    z-index: -1;
+}
+#rs-2-text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
 @media screen and (max-width: 1000px) {
     .illus-1 {
       display: none;
@@ -198,7 +225,7 @@ color: #1F1449;
 
 .dash-images{
     
-        width: 70px; /* You can set the dimensions to whatever you want */
+        width: 70px; 
         height: 70px;
         object-fit: cover;
         margin:5px;
