@@ -15,6 +15,8 @@ import goggles from "../Images/land-goggles.svg"
 import cirImg from "../Images/360img.svg"
 import vidGame from "../Images/vidGame.svg"
 import money from "../Images/money.svg"
+import planet2 from "../Images/planet-2.svg"
+import planet3 from "../Images/planet-3.svg"
 
 export default function LandingPage() {
   var headerText = "SIGN IN"
@@ -62,7 +64,7 @@ export default function LandingPage() {
         <div className="d-flex justify-content-center align-items-center features">
         <Row>
           
-            <Col>
+            <Col style={{position:"relative"}}>
               <Card id="land-card">
                 <Card.Img className="land-images" variant="top" src={goggles} />
                 <Card.Body>
@@ -72,7 +74,7 @@ export default function LandingPage() {
                   </Card.Text>
                 </Card.Body>
               </Card>
-              <Card id="land-card" >
+              <Card id="land-card" style={{zIndex:"1"}} >
                 <Card.Img className="land-images" variant="top" src={cirImg} />
                 <Card.Body>
                   
@@ -81,9 +83,11 @@ export default function LandingPage() {
                   </Card.Text>
                 </Card.Body>
               </Card>
+              <Image className="planet-2" src={planet2}/>
             </Col>
             <Col>
-              <Card id="land-card">
+            <Image className="planet-3" src={planet3}/>
+              <Card id="land-card" >
                 <Card.Img className="land-images" variant="top" src={vidGame} />
                 <Card.Body>
                   
@@ -92,6 +96,7 @@ export default function LandingPage() {
                   </Card.Text>
                 </Card.Body>
               </Card>
+              
               <Card id="land-card">
                 <Card.Img className="land-images" variant="top" src={money} />
                 <Card.Body>
