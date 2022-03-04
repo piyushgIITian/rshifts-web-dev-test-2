@@ -28,7 +28,7 @@ export default function LandingPage() {
       <Header buttonText={headerText} link={"/login"}/>
       <div className="container-lp-1">
 
-        <div style={{alignItems:"center"}}>
+        <div className='sidePanel' style={{alignItems:"center"}}>
         <Image className="illus-arrow"src={arrow}/>
         
         {/**

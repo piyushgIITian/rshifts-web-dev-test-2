@@ -191,11 +191,8 @@ color: #1F1449;
     }
   }
 @media screen and (max-width: 600px){
-    #vr{
-        font-size: 50px;
-    }
-    #meta{
-        font-size: 50px;
+    .sidePanel{
+        display: none;
     }
 }
 
