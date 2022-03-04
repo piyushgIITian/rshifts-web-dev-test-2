@@ -45,7 +45,7 @@ export default function Dashboard() {
       <Card id="dashboard-card">
         <Card.Body>
           <Row>
-          <Image className="w-20 h-20 p-1" src={gearicon}/ ><div style={{marginLeft:"5px"}}>
+          <Image className="dash-images" src={gearicon}/ ><div style={{marginLeft:"5px"}}>
           <Card.Title>Primary Card Title</Card.Title>
           <Card.Text>
             Some quick example text to 
@@ -56,7 +56,7 @@ export default function Dashboard() {
       <Card  id="dashboard-card">
         <Card.Body>
           <Row>
-          <Image className="w-20 h-20 p-1" src={moreInf}/ ><div style={{marginLeft:"5px"}}>
+          <Image className="dash-images" src={moreInf}/ ><div style={{marginLeft:"5px"}}>
           <Card.Title >Primary Card Title</Card.Title>
           <Card.Text>
             Some quick example text to 
@@ -69,7 +69,7 @@ export default function Dashboard() {
       <Card  id="dashboard-card">
         <Card.Body>
           <Row>
-          <Image className="w-20 h-20 p-2" src={headGear}/ ><div style={{marginLeft:"5px"}}>
+          <Image className="dash-images" src={headGear}/ ><div style={{marginLeft:"5px"}}>
           <Card.Title>Primary Card Title</Card.Title>
           <Card.Text>
             Some quick example text to 
@@ -80,7 +80,7 @@ export default function Dashboard() {
       <Card id="dashboard-card">
         <Card.Body>
           <Row>
-          <Image className="w-20 h-20 p-2" src={helpIcon}/ ><div style={{marginLeft:"5px"}}>
+          <Image className="dash-images" src={helpIcon}/ ><div style={{marginLeft:"5px"}}>
           <Card.Title >Primary Card Title</Card.Title>
           <Card.Text>
             Some quick example text to 

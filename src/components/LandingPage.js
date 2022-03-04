@@ -47,11 +47,11 @@ export default function LandingPage() {
         <p id="vr">VR</p>
         <p id="meta">METAVERSE</p>
         <p>Rshifts is an interactive smartphone XR solution using cutting edge computer vision techniques to provide state of the art XR experiences on the go.</p>
-        <Button href="/login"  className="mt-5" id="rs-button" type="primary">
+        <Button href="/login"  className="mt-5 mb-5" id="rs-button" type="primary">
               Join Us
           </Button>
         </div>
-
+        <source media="(min-width:800px)" srcSet={illus1}/>
         <Image className="illus-1" src={illus1}/>
         
 
