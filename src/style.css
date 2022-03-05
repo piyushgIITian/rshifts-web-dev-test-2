@@ -8,8 +8,13 @@
 }
 
 .footer{
-    
+    width:100%;
     bottom:0;
+}
+@media screen and (max-width:390px) and (min-width:20px){
+    .footer{
+        width: 100%;
+    }
 }
 .background-gray{
     background-color: #E5E5E5;
@@ -290,6 +295,7 @@ color: #1F1449;
     /* background-attachment: fixed; */
     background-position:top;
     margin: 0;
+    min-width: 400px;
 }
 
 .p3-2-text{
@@ -387,7 +393,16 @@ color: #917FED;
         align-items: center;
         position: relative;
     }
+    .panel-3-2{
+        height:800px;
+        margin-top: 0px;
+    }
     .panel-3-2-txt2{
-        font-size: 80px;
+        font-size: 70px;
+        text-align: center;
+    }
+    .panel-3-2-txt1{
+        font-size: 30px;
+        text-align: center;
     }
 }
