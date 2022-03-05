@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.footer{
+    
+    bottom:0;
+}
 .background-gray{
     background-color: #E5E5E5;
 }
@@ -169,7 +173,6 @@ font-weight: 600;
 font-size: 70px;
 margin-bottom: 0px;
 color: #1F1449;
-overflow-wrap: break-word;
 }
 #join-line{
     font-style: normal;
@@ -222,15 +225,143 @@ color: #1F1449;
     font-size: 24px;
     text-align: center;
 }
+
+.dash-images{
+    
+        width: 70px; 
+        height: 70px;
+        object-fit: cover;
+        margin:5px;
+}
+
+.panel-3{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height:1200px;
+    background: url("./Images/planet-panel.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+.p3-background-planets{
+    width:100%;
+    z-index: -1;
+}
+
+#p3-card{
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: inset 0px 39px 58px -36px rgba(255, 255, 255, 0.5), inset 0px 7px 11px -4px #FFFFFF, inset 0px -82px 68px -84px rgba(96, 68, 144, 0.3), inset 0px 98px 100px -48px rgba(202, 172, 255, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 4px rgba(238, 51, 221, 0.2);
+    backdrop-filter: blur(100px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 60px;
+    width: 365px;
+    height: 236px;
+    padding: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    min-width: 300px;
+    
+}
+.p3-cards{
+    position: relative;
+    margin:20px;
+    height: 100%;
+    color:white;
+    min-width: 0;
+    
+}
+
+.panel-3-2{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height:1200px;
+    background: url("./Images/planets.svg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-position:top;
+    margin: 0;
+}
+
+.p3-2-text{
+    position: relative;
+    height: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+.panel-3-2-txt1{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+margin-top: 10px;
+
+color: #1F1449;
+}
+.panel-3-2-txt2{
+    font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 100px;
+line-height: 150px;
+/* identical to box height */
+margin-top: 10px;
+
+color: #917FED;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px)
+{
+    .p3-card-1{
+        top: -7%;
+    }
+    .p3-card-2{
+        top:  7%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1000px) {
     .illus-1 {
       display: none;
     }
     *{
-        overflow-wrap: break-word;
+        overflow-wrap: anywhere;
     }
   }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .sidePanel{
         display: none;
     }
@@ -248,12 +379,14 @@ color: #1F1449;
         font-size: 18px;
         text-align: center;
     }
-}
-
-.dash-images{
-    
-        width: 70px; 
-        height: 70px;
-        object-fit: cover;
-        margin:5px;
+    .p3-cards{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .panel-3-2-txt2{
+        font-size: 80px;
+    }
 }

@@ -4,7 +4,7 @@ import "../style.css"
 
 export default function Footer() {
   return (
-    <div>
+    <div className="footer">
         
         <Card style={{color:"white"}}>
         <Card.Header style={{background:"#927EFB",height:"7vh"}}> </Card.Header>
