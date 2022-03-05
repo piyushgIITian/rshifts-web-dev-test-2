@@ -7,7 +7,7 @@ import "../style.css"
 import Panel1 from './landing-page/Panel1'
 import Panel2 from './landing-page/Panel2'
 import Panel3 from './landing-page/Panel3'
-import Panel4 from './landing-page/Panel4'
+// import Panel4 from './landing-page/Panel4'
 
 
 export default function LandingPage() {
