@@ -237,6 +237,17 @@ color: #1F1449;
     #meta{
         font-size: 60px;
     }
+    #land-card{
+        height: 300px;
+    width: 300px;
+    }
+    #rs-2-text{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 .dash-images{
