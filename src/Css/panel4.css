@@ -1,0 +1,71 @@
+.panel-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin-top: 30px;
+}
+
+.eyeguy{
+    position: top;
+    width: 100%;
+}
+
+.p-row{
+display: flex;
+justify-content: left;
+align-items: left;
+min-width: 1000px;
+}
+.p-col{
+display: flex;
+flex-direction: column;
+justify-content: left;
+align-items: left;
+}
+
+#p4-card{
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: inset 0px 39px 58px rgba(255, 255, 255, 0.5), inset 0px 7px 11px #FFFFFF, inset 0px -82px 68px rgba(96, 68, 144, 0.3), inset 0px 98px 100px rgba(202, 172, 255, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 4px rgba(238, 51, 221, 0.2);
+    backdrop-filter: blur(100px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 60px;
+    width: 250px;
+    height: 170px;
+
+    padiing-right:35px;
+    padding-left: 35px;
+    margin: 50px;
+    position: relative;
+    text-align: center;
+    min-width: 300px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    
+}
+.p4-card-text{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+color: #1F1449;
+}
+.span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
+  .extended-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

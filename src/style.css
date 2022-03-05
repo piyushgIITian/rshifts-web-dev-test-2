@@ -288,7 +288,7 @@ color: #1F1449;
     justify-content: center;
     align-items: center;
     position: relative;
-    height:1200px;
+    height:800px;
     background: url("./Images/planets.svg");
     background-repeat: no-repeat;
     /* background-size: cover; */
@@ -422,7 +422,7 @@ color: #917FED;
         display: none;
     }
     #meta{
-        font-size: 60px;
+        font-size: 50px;
     }
     #land-card{
         height: 300px;

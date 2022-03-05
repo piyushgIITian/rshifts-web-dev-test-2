@@ -7,6 +7,7 @@ import "../style.css"
 import Panel1 from './landing-page/Panel1'
 import Panel2 from './landing-page/Panel2'
 import Panel3 from './landing-page/Panel3'
+import Panel4 from './landing-page/Panel4'
 import Panel5 from './landing-page/Panel5'
 import Subscribe from './landing-page/subscribe'
 
@@ -27,6 +28,7 @@ export default function LandingPage() {
       <Panel1/>
       <Panel2/>  
       <Panel3/>  
+      <Panel4/>
       <Panel5/>
       <Subscribe/>
       <Footer/>

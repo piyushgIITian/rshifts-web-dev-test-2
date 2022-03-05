@@ -12,7 +12,7 @@ import linkedin from "../../Images/f-linkedin.svg"
 
 export default function Panel5() {
   return (
-    <div className='panel-5' style={{position:"relative"}}>
+    <div className='panel-5' style={{position:"relative",marginTop:"0px"}}>
         <div className="panel-3 ">
         <div className="p3-cards d-flex justify-content-center align-items-center ">
 
