@@ -350,7 +350,10 @@ color: #917FED;
 
 }
 
-
+.wrap{position:relative;
+    width:100%;
+    overflow:hidden;
+}
 
 
 
@@ -364,7 +367,8 @@ color: #917FED;
     .illus-1 {
       display: none;
     }
-    *{
+    *{  
+        overflow-x: visible;
         overflow-wrap: anywhere;
     }
   }
