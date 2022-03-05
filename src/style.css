@@ -329,11 +329,50 @@ color: #917FED;
 }
 
 
+.founder-name{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
 
+    color: #917FED;
+}
+.founder-title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+/* identical to box height */
 
+    text-align: center;
 
+    color: #FFFFFF;
+}
 
+.extended-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.founder-social-icons{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.founder-social-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+}
 
 
 
@@ -347,6 +386,13 @@ color: #917FED;
     .p3-card-2{
         top:  7%;
     }
+    .p4-card-1{
+        top: 5%;
+    }
+    .p4-card-2{
+        top:  -5%;
+    }
+
 
 }
 
@@ -354,7 +400,6 @@ color: #917FED;
     width:100%;
     overflow:hidden;
 }
-
 
 
 
@@ -409,4 +454,8 @@ color: #917FED;
         font-size: 30px;
         text-align: center;
     }
+    .piyushgautam{
+        color:black
+    }
+    
 }

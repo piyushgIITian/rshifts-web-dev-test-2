@@ -16,7 +16,7 @@ export default function Panel2() {
     <div className="d-flex justify-content-center align-items-center features">
         <Row>
           
-            <Col style={{position:"relative"}}>
+            <Col className="justify-content-center align-items-center"style={{position:"relative"}}>
               <Card id="land-card">
                 <Card.Img className="land-images" variant="top" src={goggles} />
                 <Card.Body>
