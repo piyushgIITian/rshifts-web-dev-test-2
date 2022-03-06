@@ -22,7 +22,7 @@ export default function Header(props) {
                 <Nav>
                     <Nav.Link href="/" id="header-tabs" className="hover-underline-animation"><Link activeClass="active" to="home" spy={true} smooth={true}>HOME</Link></Nav.Link>
                     <Nav.Link href="#about-us" id="header-tabs" className="hover-underline-animation"><Link  to="about-us" spy={true} smooth={true}>ABOUT US</Link></Nav.Link>
-                    <Nav.Link href="#contactus" id="header-tabs" className="hover-underline-animation">CONTACT US</Nav.Link>
+                    <Nav.Link href="/contact-us" id="header-tabs" className="hover-underline-animation">CONTACT US</Nav.Link>
                     <Button onClick={()=>props.buttonFunc()} href={props.link} className="btn10 px-3" id="rs-button-1" type="submit">
                     <div className="transition"></div>
                        {props.buttonText}

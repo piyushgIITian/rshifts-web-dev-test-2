@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import LandingPage from "./LandingPage"
+import ContactUs from "./ContactUs"
 
 import "../style.css"
 
@@ -28,7 +29,7 @@ function App() {
                   <Route path="/signup" component={Signup} />
                   <Route path="/login" component={Login} />
                   <Route path="/forgot-password" component={ForgotPassword} />
-
+                  <Route path="/contact-us" component={ContactUs}/>
                 </div>
              </Container>
 
