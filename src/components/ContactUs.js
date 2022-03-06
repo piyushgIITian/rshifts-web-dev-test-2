@@ -60,7 +60,7 @@ resetForm(){
           <Card.Body style={{borderRadius: "20px"}}>
             <h2 className="text-center mb-4" style={{fontSize: '22px', fontWeight: 'bold'}}>Get in touch with us!</h2>
           
-            <Form onSubmit={this.submitEmail.bind(this)} method="POST" >
+            <Form onSubmit={this.submitEmail.bind(this)}  >
   
               <Form.Group id="name" className="mb-4" >
                 

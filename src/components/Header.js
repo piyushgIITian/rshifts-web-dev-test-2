@@ -1,9 +1,17 @@
 import React from 'react'
+
 import { Navbar, Nav, Button} from "react-bootstrap"
+
 import {Link} from 'react-scroll'
 import "../style.css"
 import "../Css/button-anim.css"
 export default function Header(props) {
+  
+
+
+
+
+
   return (
     <div className='header'>
         <Navbar bg="light" expand="lg" className="py-3  bg-white  " style={{boxShadow: "0px 6px 5px 2px rgba(0, 0, 0, 0.05)", marginBottom:"23px"}}>

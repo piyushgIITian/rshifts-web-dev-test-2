@@ -34,7 +34,7 @@ export default function Dashboard() {
       <div style={{ marginLeft: "113px", paddingTop: "40px"}}>
           <h3 className="mb-2 ts"><strong>Your Account</strong></h3>
           {error && <Alert variant="danger">{error}</Alert>}
-          {currentUser.email}
+          {currentUser.displayName}
           {/* <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
             Update Profile
           </Link> */}

@@ -8,6 +8,7 @@
     text-decoration: none;
     display:inline-block;
     
+    
   }
   
   .btn10::before {
@@ -42,9 +43,9 @@
   .btn10{
       font-family: "proxima-nova", sans-serif;
       font-weight: 500;
-      font-size: 13px;
+      
       text-transform: uppercase!important;
-      letter-spacing: 2px;
+      
       
       cursor: hand;
       text-transform: capitalize;
@@ -60,7 +61,7 @@
   
   
   .btn10:hover{
-      border: 1px solid #071982;
+      border: 1px solid #A290EC;
         color: white!important;
   }
   .btn10::before {
@@ -89,7 +90,7 @@
       width: 0%;
       height: 100%;
       display: block;
-      background: #4B8CCA;
+      background: #FBA82D;
       position: absolute;
       -ms-transform: skewX(-20deg);
       -webkit-transform: skewX(-20deg); 
