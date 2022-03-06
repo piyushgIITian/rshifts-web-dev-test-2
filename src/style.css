@@ -26,7 +26,31 @@
 .font-tomorrow{
     font-family: 'Tomorrow', sans-serif;
 }
-
+.subscribe{
+        width:100%;
+        height: 400px;
+        font-family:  Poppins;
+        font-size:  28px;
+        line-height:  48px;
+        color:  #1F1449;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+@media screen and (max-width:1000px){
+    .subscribe{
+        font-size: 22px;
+    }
+    .features{
+        display:flex;
+        position: relative;
+        left:7%;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 #rs-button-1{
     background: #7962F5;
@@ -37,6 +61,8 @@
     margin-right: 20px;
     color:black;
     border-color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
 }
 #rs-button{
     background: #7962F5;
