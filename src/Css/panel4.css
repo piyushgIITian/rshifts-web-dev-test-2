@@ -53,8 +53,12 @@ font-weight: normal;
 font-size: 18px;
 line-height: 27px;
 text-align: center;
-
+position:absolute;
 color: #1F1449;
+right:20%;
+left:20%;
+top:20%;
+bottom: 20%;
 }
 .span {
     display: inline-block;
@@ -69,3 +73,9 @@ color: #1F1449;
     align-items: center;
 
 }
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .panel-4 {
+      display: none;
+    }
+  }

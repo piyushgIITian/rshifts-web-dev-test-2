@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, Button} from "react-bootstrap"
+import {Link} from 'react-scroll'
 import "../style.css"
 
 
@@ -21,7 +22,7 @@ export default function Header(props) {
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end" style={{marginRight:"101px"}}>
                 <Nav>
                     <Nav.Link href="/" id="header-tabs" className="hover-underline-animation">HOME</Nav.Link>
-                    <Nav.Link href="#aboutus" id="header-tabs" className="hover-underline-animation">ABOUT US</Nav.Link>
+                    <Nav.Link href="#about-us" id="header-tabs" className="hover-underline-animation">ABOUT US</Nav.Link>
                     <Nav.Link href="#contactus" id="header-tabs" className="hover-underline-animation">CONTACT US</Nav.Link>
                     <Button onClick={()=>props.buttonFunc()} href={props.link} className="px-3" id="rs-button-1" type="submit">
                        {props.buttonText}

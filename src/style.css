@@ -459,3 +459,9 @@ color: #917FED;
     }
     
 }
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .panel-3-2 {
+      display: none;
+    }
+  }

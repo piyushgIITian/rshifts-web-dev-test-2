@@ -5,9 +5,11 @@ import "../../Css/panel4.css"
 import eyeGuy from "../../Images/eye-guy.svg"
 import one from "../../Images/1.svg"
 import two from "../../Images/2.svg"
-import three from "../../Images/3p.svg"
+import three from "../../Images/p3-mod.svg"
 import planet1 from "../../Images/planet-1.svg"
 import planet3 from "../../Images/planet-3.svg"
+import rightArrow from "../../Images/right-arrow.svg"
+import upArrow from "../../Images/up-arrow.svg"
 
 export default function Panel4() {
   return (
@@ -40,6 +42,9 @@ export default function Panel4() {
                 </Card.Text>
                 </Card.Body>
                 
+            <Image src={upArrow} style={{zIndex:"10",position:"absolute",
+            top:"85%",
+            left:"45%",margin:"0px"}}/>
             <Image src={two} style={{zIndex:"10",position:"absolute",
             top:"60%",
             left:"5%",margin:"0px"}}/>
@@ -75,6 +80,9 @@ export default function Panel4() {
                 </Card.Body>
                 
             </Card>
+            <Image src={rightArrow} style={{position:"absolute",
+            top:"40%",
+            right:"-12%",margin:"0px"}}/>
             <Image src={planet3} style={{position:"absolute",
             top:"50%",
             left:"0%",margin:"0px"}}/>
