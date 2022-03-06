@@ -24,7 +24,7 @@ export default function LandingPage() {
 
   return (
     <div className='wrap' style={{background:"white"}}>
-      <Header buttonText={headerText} link={"/login"}/>
+      <Header buttonText={headerText} link={"/signup"}/>
       <Panel1/>
       <Panel2/>  
       <Panel3/>  

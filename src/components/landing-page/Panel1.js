@@ -12,7 +12,7 @@ import "../../style.css"
 
 export default function Panel1() {
   return (
-    <div className="container-lp-1">
+    <div className="container-lp-1" id="home">
 
         <div className='sidePanel' style={{alignItems:"center"}}>
         <Image className="illus-arrow"src={arrow}/>
@@ -22,10 +22,11 @@ export default function Panel1() {
        */}
 
           <div className="social-column">
-          <Image id="logo" src={facebook}/>
-          <Image id="logo" src={instagram}/>
-          <Image id="logo" src={linkedin}/>
-
+            <a href="https://www.facebook.com/rshifts"> <Image id="logo" className='hvr-float-shadow' src={facebook}/></a>
+            <a href="https://www.instagram.com/reality.shifts/"> <Image id="logo" className='hvr-float-shadow'  src={instagram}/></a>
+            <a href="https://www.linkedin.com/company/rshifts/"> <Image id="logo" className='hvr-float-shadow'  src={linkedin}/></a>
+          
+         
           </div >
         </div>
         <div className="land-text font-poppins" >
@@ -33,8 +34,9 @@ export default function Panel1() {
         <p id="vr">VR</p>
         <p id="meta">METAVERSE</p>
         <p>Rshifts is an interactive smartphone XR solution using cutting edge computer vision techniques to provide state of the art XR experiences on the go.</p>
-        <Button href="/login"  className="mt-5 mb-5" id="rs-button" type="primary">
+        <Button href="/signup"  className="mt-5 mb-5" id="rs-button" type="primary">
               Join Us
+              
           </Button>
         </div>
         <source media="(min-width:800px)" srcSet={illus1}/>

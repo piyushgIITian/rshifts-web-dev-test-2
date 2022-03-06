@@ -1,6 +1,7 @@
 import React from 'react'
 import {Card, Row} from "react-bootstrap"
 import "../style.css"
+import {Link} from 'react-scroll'
 
 export default function Footer() {
   return (
@@ -40,11 +41,15 @@ export default function Footer() {
 
         <Card.Footer id="footer-bot">
             <Row>
-            <a id="footer-foot" href="/">
+            <a id="footer-foot" >
+            <Link activeClass="active" to="home" spy={true} smooth={true}>
             HOME
+            </Link>
             </a>
-            <a id="footer-foot" href="/">
+            <a id="footer-foot" href="#about-us">
+            <Link to="about-us" spy={true} smooth={true}>
             ABOUT US
+            </Link>
             </a>
             <a id="footer-foot" href="/">
             COMPANY VALUES

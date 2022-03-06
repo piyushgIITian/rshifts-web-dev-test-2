@@ -12,11 +12,11 @@ import linkedin from "../../Images/f-linkedin.svg"
 
 export default function Panel5() {
   return (
-    <div className='panel-5' id="about-us" style={{position:"relative",marginTop:"0px"}}>
+    <div className='panel-5'  style={{position:"relative",marginTop:"0px"}}>
         <div className="panel-3 ">
         <div className="p3-cards d-flex justify-content-center align-items-center ">
 
-        <div className='extendedCard p4-card-1'>
+        <div className='extendedCard p4-card-1' >
         <Card id="p3-card" >
             
             <Card.Body className="p-0">
@@ -33,7 +33,7 @@ export default function Panel5() {
                 <Image className="founder-social-icon" src={linkedin}/>
             </div>
         </div>
-        <div className="extendedCard p4-card-2">
+        <div className="extendedCard p4-card-2" id="about-us">
         <Card id="p3-card" >
             
             <Card.Body className="p-0">
