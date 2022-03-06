@@ -28,9 +28,15 @@ export default function Panel5() {
             <div className="founder-name">Sudeep Sharma</div>
             <div className="founder-title">CEO</div>
             <div className="founder-social-icons">
-                <Image className="founder-social-icon" src={facebook}/>
-                <Image className="founder-social-icon" src={twitter}/>
-                <Image className="founder-social-icon" src={linkedin}/>
+                <a href="https://www.facebook.com/sudeep.sharma.104">
+                    <Image className="founder-social-icon hvr-float-shadow" src={facebook}/>
+                </a>
+                <a href="/">
+                    <Image className="founder-social-icon hvr-float-shadow" src={twitter}/>
+                </a>
+                <a href="https://www.linkedin.com/in/sudeep-sharma-466a41174/">
+                    <Image className="founder-social-icon hvr-float-shadow" src={linkedin}/>
+                </a>
             </div>
         </div>
         <div className="extendedCard p4-card-2" id="about-us">
@@ -44,9 +50,15 @@ export default function Panel5() {
             <div className="founder-name">Prakhar Srivastava</div>
             <div className="founder-title">CTO</div>
             <div className="founder-social-icons" style={{marginBottom:"100px"}}>
-                <Image className="founder-social-icon" src={facebook}/>
-                <Image className="founder-social-icon" src={twitter}/>
-                <Image className="founder-social-icon" src={linkedin}/>
+            <a href="/">
+                <Image className="founder-social-icon hvr-float-shadow" src={facebook}/>
+                </a>
+                <a href="/">
+                <Image className="founder-social-icon hvr-float-shadow" src={twitter}/>
+                </a>
+                <a href="https://www.linkedin.com/in/prakharsrivastavagamedeveloper/">
+                <Image className="founder-social-icon hvr-float-shadow" src={linkedin}/>
+                </a>
             </div>
         </div>
         <div className="extendedCard p4-card-1">
@@ -60,15 +72,22 @@ export default function Panel5() {
             <div className="founder-name">Piyush Gautam</div>
             <div className="founder-title piyushgautam">COO</div>
             <div className="founder-social-icons">
-                <Image className="founder-social-icon" src={facebook}/>
-                <Image className="founder-social-icon" src={twitter}/>
-                <Image className="founder-social-icon" src={linkedin}/>
+                <a href="https://www.facebook.com/PiyushGautamtg">
+                <Image className="founder-social-icon hvr-float-shadow" src={facebook}/>
+                </a>
+                <a href="https://twitter.com/piyushgautamtg">
+                <Image className="founder-social-icon hvr-float-shadow" src={twitter}/>
+                </a>
+                <a href="https://www.linkedin.com/in/piyush-gautam-tg/">
+                <Image className="founder-social-icon hvr-float-shadow" src={linkedin}/>
+                </a>
             </div>
-
         </div>
-        
         </div>
     </div>
     </div>
   )
 }
+        
+
+

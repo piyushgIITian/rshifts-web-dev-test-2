@@ -80,6 +80,7 @@
     margin:auto;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    cursor: hand;
 
 }
 #links{
@@ -457,6 +458,10 @@ color: #917FED;
     .illus-1 {
       display: none;
     }
+    .panel-3-2 {
+        display: none;
+      }
+      
     *{  
         overflow-x: visible;
         overflow-wrap: anywhere;
@@ -505,8 +510,3 @@ color: #917FED;
     
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
-    .panel-3-2 {
-      display: none;
-    }
-  }

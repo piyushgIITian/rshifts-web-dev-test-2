@@ -29,9 +29,9 @@ export default function Footer() {
             <Card.Title id="foot-title">Connect with us</Card.Title>
             <Card.Text>
                 
-                <a id="links" href="www.facebook.com/" >Facebook</a><br/>
-                <a id="links" href="www.linkedin.com" >LinkedIn</a><br/>
-                <a id="links" href="www.instagram.com" >Instagram</a><br/>
+                <a id="links" href="https://www.facebook.com/rshifts" >Facebook</a><br/>
+                <a id="links" href="https://www.linkedin.com/company/rshifts/" >LinkedIn</a><br/>
+                <a id="links" href="https://www.instagram.com/reality.shifts/" >Instagram</a><br/>
                 
             </Card.Text>
             
@@ -41,7 +41,7 @@ export default function Footer() {
 
         <Card.Footer id="footer-bot">
             <Row>
-            <a id="footer-foot" >
+            <a id="footer-foot" href="#home" >
             <Link activeClass="active" to="home" spy={true} smooth={true}>
             HOME
             </Link>

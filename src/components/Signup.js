@@ -35,7 +35,10 @@ export default function Signup() {
   return (
     <div>
       <div className="text-center">
+        <a href="/">
+
         <Image src="/logogroup.png"/ >
+        </a>
       </div>
       <Card className="shadow p-3 mb-5 bg-white" style={{borderRadius: "20px"}}>
         <Card.Body style={{borderRadius: "20px"}}>
