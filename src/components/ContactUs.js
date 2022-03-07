@@ -42,11 +42,12 @@ export default class ContactUs extends Component {
               alert("Message failed to send.")
           }
         })
-}
+      }
 
-resetForm(){
-        this.setState({name: '', email: '',subject:'', message: ''})
-}
+      resetForm(){
+              this.setState({name: '', email: '',subject:'', message: ''})
+      }
+
   render() {
     return (
         <div>
@@ -60,7 +61,7 @@ resetForm(){
           <Card.Body style={{borderRadius: "20px"}}>
             <h2 className="text-center mb-4" style={{fontSize: '22px', fontWeight: 'bold'}}>Get in touch with us!</h2>
           
-            <Form onSubmit={this.submitEmail.bind(this)}  >
+            <Form onSubmit={this.submitEmail}  >
   
               <Form.Group id="name" className="mb-4" >
                 
