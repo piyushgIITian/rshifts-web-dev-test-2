@@ -2,10 +2,17 @@ const express = require('express');
 const sgMail = require('@sendgrid/mail');
 const cors = require('cors');
 require("dotenv").config();
+<<<<<<< HEAD
 const bodyParser = require('body-parser')
+=======
+const bodyParser = require('body-parser');
+
+
+>>>>>>> 31b9a673780d746d98f4b14acc44a9ff56569633
 
 sgMail.setApiKey("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")
 const app = express();
+app.use(bodyParser.json());
 
 app.use(bodyParser.json());
 
@@ -17,9 +24,14 @@ const corsOptions ={
 
 app.use(cors(corsOptions))
 
+<<<<<<< HEAD
 app.post('http:localhost:5000/send', (req, res, next) => {
   var name = req.body.name
+=======
+app.post('/send', (req, res,next) => {
+>>>>>>> 31b9a673780d746d98f4b14acc44a9ff56569633
   var email = req.body.email
+  var name = req.body.name
   var subject = req.body.subject
   var message = req.body.message
 
@@ -35,6 +47,7 @@ app.post('http:localhost:5000/send', (req, res, next) => {
   .send(msg)
   .then(() => {
     console.log('Email sent')
+    res.status(200).json('done')
   })
   .catch((error) => {
     console.error(error)
