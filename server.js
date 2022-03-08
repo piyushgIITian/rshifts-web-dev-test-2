@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 
 sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY)
 const app = express();
-app.use(bodyParser.json());
+
 
 app.use(bodyParser.json());
 
@@ -20,12 +20,7 @@ const corsOptions ={
 
 app.use(cors(corsOptions))
 
-<<<<<<< HEAD
-app.post('http:localhost:5000/send', (req, res, next) => {
-  var name = req.body.name
-=======
 app.post('/send', (req, res,next) => {
->>>>>>> 31b9a673780d746d98f4b14acc44a9ff56569633
   var email = req.body.email
   var name = req.body.name
   var subject = req.body.subject
