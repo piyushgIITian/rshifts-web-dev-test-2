@@ -23,7 +23,7 @@ export default function LandingPage() {
 
     try {
       await logout()
-      history.push("/login")
+      history.push("/")
     } catch {
       setError("Failed to log out")
     }
@@ -41,6 +41,7 @@ export default function LandingPage() {
   return (
     <div className='wrap' style={{background:"white"}}>
       <Header buttonFunc={handleLogout} buttonText={headerText} link={"/signup"}/>
+      <strong>{error}</strong>
       <Panel1/>
       <Panel2/>  
       <Panel3/>  

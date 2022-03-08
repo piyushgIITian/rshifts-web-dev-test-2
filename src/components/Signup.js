@@ -40,7 +40,7 @@ export default function Signup() {
       const email = error.email;
       // The AuthCredential type that was used.
       const credential = FacebookAuthProvider.credentialFromError(error);
-
+      alert(errorCode,errorMessage,email,credential)
       // ...
     });
 
@@ -115,8 +115,8 @@ export default function Signup() {
             {/* </form> */}
             </div>
           </Form>
-          <div className='facebook-login p-3 hvr-float-shadow' id="fb-signin" role="button"
-                  onClick={handleFacebook}  id="submit">
+          <div className='facebook-login p-3 hvr-float-shadow' id="submit" role="button"
+                  onClick={handleFacebook}  >
           </div>
         </Card.Body>
       </Card>

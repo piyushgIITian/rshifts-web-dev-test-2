@@ -1,9 +1,21 @@
 const express = require('express');
-const sgMail = require('@sendgrid/mail')
+const sgMail = require('@sendgrid/mail');
+const cors = require('cors');
 require("dotenv").config();
+
+
 
 sgMail.setApiKey("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")
 const app = express();
+
+
+const corsOptions ={
+  origin:'*', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200,
+}
+
+app.use(cors(corsOptions))
 
 app.post('/send', (req, res, next) => {
   var name = req.body.name
@@ -29,7 +41,7 @@ app.post('/send', (req, res, next) => {
   })
 })
 
-const PORT = 3001 || 8080
+const PORT = 5000 || 8080
 app.listen(PORT, () => console.info(`server has started on ${PORT}`))
 
 
