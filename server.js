@@ -2,15 +2,11 @@ const express = require('express');
 const sgMail = require('@sendgrid/mail');
 const cors = require('cors');
 require("dotenv").config();
-<<<<<<< HEAD
-const bodyParser = require('body-parser')
-=======
 const bodyParser = require('body-parser');
 
 
->>>>>>> 31b9a673780d746d98f4b14acc44a9ff56569633
 
-sgMail.setApiKey("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")
+sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY)
 const app = express();
 app.use(bodyParser.json());
 
