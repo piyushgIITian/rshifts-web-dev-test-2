@@ -2,12 +2,12 @@ const express = require('express');
 const sgMail = require('@sendgrid/mail');
 const cors = require('cors');
 require("dotenv").config();
-
-
+const bodyParser = require('body-parser')
 
 sgMail.setApiKey("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")
 const app = express();
 
+app.use(bodyParser.json());
 
 const corsOptions ={
   origin:'*', 
@@ -17,7 +17,7 @@ const corsOptions ={
 
 app.use(cors(corsOptions))
 
-app.post('/send', (req, res, next) => {
+app.post('http:localhost:5000/send', (req, res, next) => {
   var name = req.body.name
   var email = req.body.email
   var subject = req.body.subject
@@ -28,7 +28,7 @@ app.post('/send', (req, res, next) => {
     from: 'piyushgautamtg@gmail.com', // Change to your verified sender
     subject: subject,
     text: message,
-    html: "<strong>Sent from {0}, email is {1}</strong>".format(name,email)
+    html: `<strong>Sent from ${name}, email is ${email}</strong>`
   }
 
   sgMail
