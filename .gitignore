@@ -2,3 +2,5 @@
 
 sendgrid.env
 playwright-report/
+
+*.env
