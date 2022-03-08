@@ -16,22 +16,21 @@ export default function ContactUs() {
     subjectRef.current = "";
   }
   async function submitEmail(e){
+    e.preventDefault();
     console.log("you clicked submit");
-      e.preventDefault();
-      await axios({
-        method: "POST", 
-        url:"http://localhost:5000/send", 
-        body:   {
-          name: nameRef.current.value,
-          email:emailRef.current.value,
-          subject:subjectRef.current.value,
-          message:messageRef.current.value,
-        },
-      }).then((response)=>{
-        if (response.data.status === 'success'){
+    console.log(nameRef.current.value);
+    axios.post('http://localhost:5000/send',{
+      name: nameRef.current.value,
+      email:emailRef.current.value,
+      subject:subjectRef.current.value,
+      message:messageRef.current.value,
+   })
+      .then((response)=>{
+        console.log(response.data)
+        if (response.data === 'done'){
             alert("Message Sent."); 
             resetForm()
-        }else if(response.data.status === 'fail'){
+        }else {
             alert("Message failed to send.")
         }
       })
