@@ -86,6 +86,7 @@ export default function Panel4() {
             <Image src={planet3} style={{position:"absolute",
             top:"50%",
             left:"0%",margin:"0px"}}/>
+            console.log(process.env.REACT_APP_FIREBASE_APP_ID)
             </div>
             <Card id="p4-card" className="p3-card-1">
                 

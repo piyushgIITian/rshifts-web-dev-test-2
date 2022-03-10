@@ -6,7 +6,8 @@ const bodyParser = require('body-parser');
 
 
 
-sgMail.setApiKey("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")
+sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY)
+// console.log(process.env.REACT_APP_SENDGRID_API_KEY)
 const app = express();
 
 
