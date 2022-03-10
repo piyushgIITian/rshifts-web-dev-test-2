@@ -19,7 +19,7 @@ export default function ContactUs() {
     e.preventDefault();
     console.log("you clicked submit");
     console.log(nameRef.current.value);
-    axios.post('https://rshifts-backend.vercel.app/send',{
+    axios.post('https://rshifts.herokuapp.com/send',{
       name: nameRef.current.value,
       email:emailRef.current.value,
       subject:subjectRef.current.value,
