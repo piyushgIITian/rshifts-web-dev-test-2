@@ -24,7 +24,7 @@ export default function Panel4() {
                     <Card.Body>
                 
                     <Card.Text className="p4-card-text">
-                    Register at RShifts to get the latest Rgear for free!!
+                    Register at RShifts to get the latest Updates !!
                     </Card.Text>
                     </Card.Body>
                     
@@ -38,7 +38,7 @@ export default function Panel4() {
                 <Card.Body>
             
                 <Card.Text className="p4-card-text">
-                Get the Rgear and download the RWorld application.
+                Fill the form in dashboard to get in line for the latest RGear
                 </Card.Text>
                 </Card.Body>
                 
@@ -55,7 +55,7 @@ export default function Panel4() {
                 <Card.Body >
             
                 <Card.Text className="p4-card-text"> 
-                Get the Rgear and download the RWorld application.
+                You will be the first to get the RGear
                 </Card.Text>
                 </Card.Body>
                 <Image src={three} style={{zIndex:"10",position:"absolute",
@@ -92,7 +92,7 @@ export default function Panel4() {
                 <Card.Body>
             
                 <Card.Text className="p4-card-text">
-                Skip the first step and get into the metaverse
+                Wait for the big launch of RWORLD metaverse for mobile
                 </Card.Text>
                 </Card.Body>
                 
