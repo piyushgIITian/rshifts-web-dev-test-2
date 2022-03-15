@@ -22,8 +22,8 @@ export default function Panel2() {
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text" >
-                    Experience the new world through VR
-                  </Card.Text>
+                  Experience the world through Mobile VR.
+                                    </Card.Text>
                 </Card.Body>
               </Card>
               <Card id="land-card" style={{zIndex:"1"}} >
@@ -31,7 +31,7 @@ export default function Panel2() {
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">
-                    View all surroundings with 360<span>&#176;</span>
+                  Join our F2P <br/> VR Metaverse- RWorld
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -44,7 +44,7 @@ export default function Panel2() {
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">
-                    Incredible gaming experience
+                    Use your Hands as positional trackers
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -54,7 +54,7 @@ export default function Panel2() {
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">
-                    Making meetings and tours easier
+                    Making virtual meetings and tours easier.
                   </Card.Text>
                 </Card.Body>
               </Card>

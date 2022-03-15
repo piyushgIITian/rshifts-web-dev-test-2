@@ -15,6 +15,20 @@ export default function Panel5() {
     <div className='panel-5'  style={{position:"relative",marginTop:"0px"}}>
         <div className="panel-3 ">
         <div className="p3-cards d-flex justify-content-center align-items-center ">
+            <h1 style={{
+                position:"absolute",
+                color:"#917FED",
+                zIndex:"10",
+                top:"20%",
+                left:"10%",
+                textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)",
+                fontFamily: 'Poppins',
+                fontStyle: "normal",
+                fontWeight: "700",
+                fontSize: "80px",
+                lineHeight: "120px"
+
+            }}>OUR TEAM</h1>
 
         <div className='extendedCard p4-card-1' >
         <Card id="p3-card" >

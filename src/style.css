@@ -200,6 +200,9 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+#description-p1{
+    width:80%;
+}
 
 .land-text{
     margin-top: 90px;
@@ -245,7 +248,7 @@ color: #1F1449;
     position: relative;
 }
 .land-images{
-    height: 90px;
+    height: 110px;
     margin-top: 15px;
 }
 .features{
@@ -300,6 +303,41 @@ color: #1F1449;
     z-index: -1;
 }
 
+
+#our-team{
+    position:"absolute";
+    top:10%;
+    left:20%;
+    z-index: 10;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120px;
+    /* identical to box height */
+
+
+    color: #917FED;
+
+    
+}
+#p3-card-2{
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: inset 0px 39px 58px -36px rgba(255, 255, 255, 0.5), inset 0px 7px 11px -4px #FFFFFF, inset 0px -82px 68px -84px rgba(96, 68, 144, 0.3), inset 0px 98px 100px -48px rgba(202, 172, 255, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 4px rgba(238, 51, 221, 0.2);
+    backdrop-filter: blur(100px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 60px;
+    width: 365px;
+    height: 236px;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    min-width: 300px;
+    
+}
 #p3-card{
     background: rgba(255, 255, 255, 0.01);
     box-shadow: inset 0px 39px 58px -36px rgba(255, 255, 255, 0.5), inset 0px 7px 11px -4px #FFFFFF, inset 0px -82px 68px -84px rgba(96, 68, 144, 0.3), inset 0px 98px 100px -48px rgba(202, 172, 255, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 4px rgba(238, 51, 221, 0.2);

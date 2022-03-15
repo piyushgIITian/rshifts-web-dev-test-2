@@ -33,7 +33,7 @@ export default function Panel1() {
         <p id="join-line">Join the world’s most affordable</p>
         <p id="vr">VR</p>
         <p id="meta">METAVERSE</p>
-        <p>Rshifts is an interactive smartphone XR solution using cutting edge computer vision techniques to provide state of the art XR experiences on the go.</p>
+        <p id="description-p1">RShifts’ <a style={{color:"#AF4BF2"}}>RWorld</a> will be world’s first authentic VR Metaverse experience for mobile phones using cutting edge machine learning techniques to provide state of the art XR experience on the <a style={{color:"#EDBA3A"}}>GO !</a></p>
         <Button href="/signup"  className="mt-5 mb-5" id="rs-button" type="primary">
               Join Us
               
