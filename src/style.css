@@ -551,9 +551,15 @@ color: #917FED;
     #meta{
         font-size: 50px;
     }
+    #our-team{
+        display: none;
+        
+
+    }
+    
     #land-card{
         height: 300px;
-    width: 300px;
+        width: 300px;
     }
     #rs-2-text{
         font-family: Poppins;

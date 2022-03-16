@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Image } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-import { getAuth, updateProfile, signInWithPopup, FacebookAuthProvider  } from "firebase/auth";
+import { getAuth, signInWithPopup, FacebookAuthProvider  } from "firebase/auth";
 
 import "../style.css"
 
@@ -12,7 +12,7 @@ export default function Signup() {
   const usernameRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
-  const { signup } = useAuth()
+  const { signup,updateUser } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
   const history = useHistory()
@@ -53,20 +53,11 @@ export default function Signup() {
       return setError("Passwords do not match")
     }
 
-    updateProfile(auth.currentUser, {
-      displayName: usernameRef.current.value
-    }).then(() => {
-      // Profile updated!
-      // ...
-    }).catch((error) => {
-      // An error occurred
-      // ...
-    });
-
     try {
       setError("")
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
+      await updateUser(usernameRef.current.value)
       history.push("/dashboard")
     } catch {
       setError("Failed to create an account")
