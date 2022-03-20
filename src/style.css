@@ -540,6 +540,9 @@ color: #917FED;
 
 
 @media screen and (max-width: 1000px) {
+    .arrow-right{
+        display: none;
+    }
     .illus-1 {
       display: none;
     }
