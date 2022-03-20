@@ -13,6 +13,7 @@ import Panel4 from './landing-page/Panel4'
 import Panel5 from './landing-page/Panel5'
 import Subscribe from './landing-page/subscribe'
 
+
 export default function LandingPage() {
   const [error, setError] = useState("")
   const { currentUser, logout } = useAuth()
@@ -30,9 +31,11 @@ export default function LandingPage() {
   }
 
   var headerText = "SIGN IN"
+  var linkto = '/signup'
 
   if(currentUser){
-    headerText="SIGN OUT"
+    headerText="DASHBOARD"
+    linkto = '/dashboard'
   }
   else{
     headerText="SIGN UP"
@@ -40,7 +43,8 @@ export default function LandingPage() {
 
   return (
     <div className='wrap' style={{background:"white"}}>
-      <Header buttonFunc={handleLogout} buttonText={headerText} link={"/signup"}/>
+      
+      <Header buttonText={headerText} link={linkto}/>
       <strong>{error}</strong>
       <Panel1/>
       <Panel2/>  

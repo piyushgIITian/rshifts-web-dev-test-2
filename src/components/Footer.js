@@ -19,7 +19,7 @@ export default function Footer() {
             
         </Card.Body>
         <Card.Body id="foot-card-body">
-            <Card.Title id="foot-title">Contact Us</Card.Title>
+            <Card.Title id="foot-title">Contact us</Card.Title>
             <Card.Text>
                 9820197246<br/> piyush.gautam@rshifts.com
             </Card.Text>

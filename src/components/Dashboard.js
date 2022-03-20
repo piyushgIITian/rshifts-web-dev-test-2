@@ -46,33 +46,35 @@ export default function Dashboard() {
         <Card.Body>
           <Row>
           <Image className="dash-images" src={gearicon}/ ><div style={{marginLeft:"5px"}}>
-          <Card.Title>Primary Card Title</Card.Title>
+          <Card.Title>Account Settings</Card.Title>
           <Card.Text>
-            Some quick example text to 
+          Change account username and password
           </Card.Text></div>
           </Row>
         </Card.Body>
       </Card>
+      <a style={{textDecoration:"none"}} href="/order">
       <Card  id="dashboard-card">
         <Card.Body>
           <Row>
           <Image className="dash-images" src={moreInf}/ ><div style={{marginLeft:"5px"}}>
-          <Card.Title >Primary Card Title</Card.Title>
+          <Card.Title >Order RGear</Card.Title>
           <Card.Text>
-            Some quick example text to 
+            Fill order details to get the latest RGear Vr <br/>headset for free.
           </Card.Text></div>
           </Row>
         </Card.Body>
       </Card>
+      </a>
       </CardGroup>
       <CardGroup>
       <Card  id="dashboard-card">
         <Card.Body>
           <Row>
           <Image className="dash-images" src={headGear}/ ><div style={{marginLeft:"5px"}}>
-          <Card.Title>Primary Card Title</Card.Title>
+          <Card.Title >Order RGear</Card.Title>
           <Card.Text>
-            Some quick example text to 
+            Fill order details to get the latest RGear Vr <br/>headset for free.
           </Card.Text></div>
           </Row>
         </Card.Body>

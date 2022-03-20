@@ -15,7 +15,7 @@ export default function Panel5() {
     <div className='panel-5'  style={{position:"relative",marginTop:"0px"}}>
         <div className="panel-3 ">
         <div className="p3-cards d-flex justify-content-center align-items-center ">
-        <div id="our-team" style={{
+        <div className='hvr-float-shadow' id="our-team" style={{
             position:"absolute",
             color:"#917FED",
             zIndex:"10",

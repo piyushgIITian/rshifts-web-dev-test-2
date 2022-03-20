@@ -53,9 +53,9 @@
 }
 
 #rs-button-1{
+    display: flex;
     background: #7962F5;
     border-radius: 10px; 
-    width: 121px;
     height: 41px; 
     margin-left: 50px;
     margin-right: 20px;
@@ -202,6 +202,7 @@
 }
 #description-p1{
     width:80%;
+    font-size:large
 }
 
 .land-text{
@@ -229,7 +230,9 @@ color: #1F1449;
     font-style: normal;
 font-weight: 500;
 font-size: 32px;
+
 line-height: 48px;
+
 /* identical to box height */
 margin:0px;
 
@@ -321,6 +324,10 @@ color: #1F1449;
 
     
 }
+
+.arrow-right{
+    margin-bottom:100px;
+}
 #p3-card-2{
     background: rgba(255, 255, 255, 0.01);
     box-shadow: inset 0px 39px 58px -36px rgba(255, 255, 255, 0.5), inset 0px 7px 11px -4px #FFFFFF, inset 0px -82px 68px -84px rgba(96, 68, 144, 0.3), inset 0px 98px 100px -48px rgba(202, 172, 255, 0.3), inset 0px 4px 18px rgba(154, 146, 210, 0.3), inset 0px 1px 4px rgba(238, 51, 221, 0.2);
@@ -333,6 +340,7 @@ color: #1F1449;
     padding: 20px;
     padding-top: 40px;
     margin: 15px;
+    margin-top: 90px;
     position: relative;
     text-align: center;
     min-width: 300px;

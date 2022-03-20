@@ -10,6 +10,7 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import LandingPage from "./LandingPage"
 import ContactUs from "./ContactUs"
+import OrderPage from "./OrderPage"
 
 import "../style.css"
 
@@ -30,6 +31,7 @@ function App() {
                   <Route path="/login" component={Login} />
                   <Route path="/forgot-password" component={ForgotPassword} />
                   <Route path="/contact-us" component={ContactUs}/>
+                  <Route path="/order" component={OrderPage}/>
                 </div>
              </Container>
 

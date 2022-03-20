@@ -12,7 +12,7 @@ export default function Signup() {
   const usernameRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
-  const { signup,updateUser } = useAuth()
+  const { signup} = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
   const history = useHistory()
@@ -23,46 +23,32 @@ export default function Signup() {
     e.preventDefault()
     await signInWithPopup(auth, provider)
     .then((result) => {
-      // The signed-in user info.
       const user = result.user;
-
-      // This gives you a Facebook Access Token. You can use it to access the Facebook API.
       const credential = FacebookAuthProvider.credentialFromResult(result);
       const accessToken = credential.accessToken;
-
-      // ...
     })
     .catch((error) => {
-      // Handle Errors here.
       const errorCode = error.code;
       const errorMessage = error.message;
-      // The email of the user's account used.
       const email = error.email;
-      // The AuthCredential type that was used.
       const credential = FacebookAuthProvider.credentialFromError(error);
       alert(errorCode,errorMessage,email,credential)
-      // ...
     });
-
   } 
   
   async function handleSubmit(e) {
     e.preventDefault()
-
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       return setError("Passwords do not match")
     }
-
     try {
       setError("")
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
-      await updateUser(usernameRef.current.value)
       history.push("/dashboard")
     } catch {
       setError("Failed to create an account")
     }
-
     setLoading(false)
   }
 
@@ -106,9 +92,9 @@ export default function Signup() {
             {/* </form> */}
             </div>
           </Form>
-          <div className='facebook-login p-3 hvr-float-shadow' id="submit" role="button"
+          {/* <div className='facebook-login p-3 hvr-float-shadow' id="submit" role="button"
                   onClick={handleFacebook}  >
-          </div>
+          </div> */}
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">

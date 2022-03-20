@@ -1,12 +1,11 @@
 .btn10{
-    padding: 15px 100px;
     color: black;
     font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
     position: relative;
     text-decoration: none;
-    display:inline-block;
+    display:flex;
     
     
   }
@@ -46,7 +45,7 @@
       
       text-transform: uppercase!important;
       
-      
+      text-align: center;
       cursor: hand;
       text-transform: capitalize;
       overflow: hidden!important;
@@ -100,9 +99,9 @@
       top: 0;
       z-index: -15;
       -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
-      -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
-      -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
-      transition: all .4s cubic-bezier(.2,.95,.57,.99);
+      -moz-transition: all .7s cubic-bezier(.2,.95,.57,.99);
+      -o-transition: all .7s cubic-bezier(.2,.95,.57,.99);
+      transition: all .7s cubic-bezier(.2,.95,.57,.99);
       box-shadow: 2px 0px 14px rgba(0,0,0,.6);
   }
   .btn10:hover::before, .btn1O:hover::before{

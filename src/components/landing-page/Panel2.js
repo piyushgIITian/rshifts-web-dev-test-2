@@ -4,8 +4,8 @@ import "../../style.css"
 
 
 import goggles from "../../Images/land-goggles.svg"
-import cirImg from "../../Images/360img.svg"
-import vidGame from "../../Images/vidGame.svg"
+import metaverse from "../../Images/metaverse.svg"
+import hands from "../../Images/hands.svg"
 import money from "../../Images/money.svg"
 import planet2 from "../../Images/planet-2.svg"
 import planet3 from "../../Images/planet-3.svg"
@@ -27,7 +27,7 @@ export default function Panel2() {
                 </Card.Body>
               </Card>
               <Card id="land-card" style={{zIndex:"1"}} >
-                <Card.Img className="land-images" variant="top" src={cirImg} />
+                <Card.Img className="land-images" variant="top" src={metaverse} />
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">
@@ -40,7 +40,7 @@ export default function Panel2() {
             <Col>
             <Image className="planet-3" src={planet3}/>
               <Card id="land-card" >
-                <Card.Img className="land-images" variant="top" src={vidGame} />
+                <Card.Img className="land-images" variant="top" src={hands} />
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">

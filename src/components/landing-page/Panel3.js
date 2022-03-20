@@ -1,5 +1,7 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Image } from 'react-bootstrap'
+
+import arrowRight from "../../Images/arrow-right.png"
 import "../../style.css"
 
 
@@ -20,7 +22,8 @@ export default function Panel3() {
                 </Card.Body>
                 
             </Card>
-            <Card id="p3-card-2" className="p3-card-2">
+            <Image className="arrow-right" src={arrowRight}/>
+            <Card id="p3-card-2" className="p3-card-1">
                 
                 <Card.Body>
             
@@ -30,6 +33,7 @@ export default function Panel3() {
                 </Card.Body>
                 
             </Card>
+            <Image className="arrow-right"   src={arrowRight}/>
             <Card id="p3-card-2" className="p3-card-1">
                 
                 <Card.Body>

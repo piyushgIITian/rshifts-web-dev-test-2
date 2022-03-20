@@ -15,9 +15,7 @@ export function AuthProvider({ children }) {
     return auth.createUserWithEmailAndPassword(email, password)
   }
 
-  function updateUser(name){
-    return auth.updateProfile({displayName:name})
-  }
+ 
   function login(email, password) {
     return auth.signInWithEmailAndPassword(email, password)
   }
@@ -58,7 +56,7 @@ export function AuthProvider({ children }) {
     resetPassword,
     updateEmail,
     updatePassword,
-    updateUser
+
   }
 
   return (
