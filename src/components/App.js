@@ -15,30 +15,35 @@ import OrderPage from "./OrderPage"
 import "../style.css"
 
 function App() {
-  
+
   return (
     <div className="background-gray font-poppins">
-   
-        <Router>
-          <AuthProvider>
-            <Switch>
-              <PrivateRoute exact path="/dashboard" component={Dashboard} />
-              <Route exact path="/" component={LandingPage}/>
 
-              <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh"}}>
-                <div className="w-100" style={{ maxWidth: "400px" }}>
-                  <PrivateRoute path="/update-profile" component={UpdateProfile} />
-                  <Route path="/signup" component={Signup} />
-                  <Route path="/login" component={Login} />
-                  <Route path="/forgot-password" component={ForgotPassword} />
-                  <Route path="/contact-us" component={ContactUs}/>
-                  <Route path="/order" component={OrderPage}/>
-                </div>
-             </Container>
+      <Router>
+        <AuthProvider>
+          <Switch>
+            <PrivateRoute  path="/dashboard" component={Dashboard} />
+            <Route exact path="/" component={LandingPage} />
+            <PrivateRoute path="/order" component={OrderPage} />
+            <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
+              <div className="w-100" style={{ maxWidth: "400px" }}>
+                <PrivateRoute path="/update-profile" component={UpdateProfile} />
+                <Route path="/signup" component={Signup} />
+                <Route path="/login" component={Login} />
+                <Route path="/forgot-password" component={ForgotPassword} />
+                <Route path="/contact-us" component={ContactUs} />
 
-            </Switch>
-          </AuthProvider>
-        </Router>
+              </div>
+            </Container>
+            
+                
+             
+                
+          
+
+          </Switch>
+        </AuthProvider>
+      </Router>
     </div>
   )
 }

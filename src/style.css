@@ -67,7 +67,6 @@
 #rs-button{
     background: #7962F5;
     border-radius: 10px; 
-    width: 121px;
     height: 41px; 
     /* font-size: 20px; */
 }
@@ -476,7 +475,10 @@ color: #917FED;
     cursor: pointer;
     
 }
-
+#rs-form-holder{
+    height: 45px;
+    width: 200px;
+}
 
 .stretched-link::after {
     position: absolute;
