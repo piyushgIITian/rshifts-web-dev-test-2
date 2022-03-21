@@ -22,7 +22,7 @@ export default function Panel3() {
                 </Card.Body>
                 
             </Card>
-            <Image className="arrow-right" src={arrowRight}/>
+            <Image className="arrow-right" src={arrowRight} loading="lazy"/>
             <Card id="p3-card-2" className="p3-card-1">
                 
                 <Card.Body>
@@ -33,7 +33,7 @@ export default function Panel3() {
                 </Card.Body>
                 
             </Card>
-            <Image className="arrow-right"   src={arrowRight}/>
+            <Image className="arrow-right"   src={arrowRight} loading="lazy"/>
             <Card id="p3-card-2" className="p3-card-1">
                 
                 <Card.Body>

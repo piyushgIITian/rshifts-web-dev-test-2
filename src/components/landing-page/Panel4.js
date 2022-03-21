@@ -14,7 +14,7 @@ import upArrow from "../../Images/up-arrow.svg"
 export default function Panel4() {
   return (
     <div className="panel-4">
-        <Image className="eyeguy"src={eyeGuy}/>
+        <Image className="eyeguy"src={eyeGuy} loading="lazy"/>
 
         <div className='p-col'>
             <div className='p-row'>
@@ -30,7 +30,7 @@ export default function Panel4() {
                     
                 <Image src={one} style={{zIndex:"10",position:"absolute",
             top:"60%",
-            left:"5%",padding:"0px"}}/>
+            left:"5%",padding:"0px"}} loading="lazy"/>
                 </Card>
                 
             <Card id="p4-card" className="p3-card-1">
@@ -44,10 +44,10 @@ export default function Panel4() {
                 
             <Image src={upArrow} style={{zIndex:"10",position:"absolute",
             top:"85%",
-            left:"45%",margin:"0px"}}/>
+            left:"45%",margin:"0px"}} loading="lazy"/>
             <Image src={two} style={{zIndex:"10",position:"absolute",
             top:"60%",
-            left:"5%",margin:"0px"}}/>
+            left:"5%",margin:"0px"}} loading="lazy"/>
             </Card>
             <div style={{position:"relative"}}>
             <Card id="p4-card" className="p3-card-1" >
@@ -60,12 +60,12 @@ export default function Panel4() {
                 </Card.Body>
                 <Image src={three} style={{zIndex:"10",position:"absolute",
                 top:"60%",
-                left:"5%",margin:"0px"}}/>
+                left:"5%",margin:"0px"}} loading="lazy"/>
 
             </Card>
                 <Image src={planet1} style={{position:"absolute",
             top:"-13%",
-            right:"0%",margin:"0px"}}/>
+            right:"0%",margin:"0px"}} loading="lazy"/>
             </div>
             </div>
             <div className='p-row'>
@@ -82,10 +82,10 @@ export default function Panel4() {
             </Card>
             <Image src={rightArrow} style={{position:"absolute",
             top:"40%",
-            right:"-12%",margin:"0px"}}/>
+            right:"-12%",margin:"0px"}} loading="lazy"/>
             <Image src={planet3} style={{position:"absolute",
             top:"50%",
-            left:"0%",margin:"0px"}}/>
+            left:"0%",margin:"0px"}} loading="lazy"/>
            
             </div>
             <Card id="p4-card" className="p3-card-1">

@@ -14,11 +14,11 @@ import planet3 from "../../Images/planet-3.svg"
 export default function Panel2() {
   return (
     <div className="d-flex justify-content-center align-items-center features">
-        <Row>
+        <Row id="panel-2-row">
           
             <Col className="justify-content-center align-items-center"style={{position:"relative"}}>
               <Card id="land-card">
-                <Card.Img className="land-images" variant="top" src={goggles} />
+                <Card.Img className="land-images" variant="top" src={goggles} loading="lazy" />
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text" >
@@ -27,7 +27,7 @@ export default function Panel2() {
                 </Card.Body>
               </Card>
               <Card id="land-card" style={{zIndex:"1"}} >
-                <Card.Img className="land-images" variant="top" src={metaverse} />
+                <Card.Img className="land-images" variant="top" src={metaverse} loading="lazy" />
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">
@@ -40,7 +40,7 @@ export default function Panel2() {
             <Col>
             <Image className="planet-3" src={planet3}/>
               <Card id="land-card" >
-                <Card.Img className="land-images" variant="top" src={hands} />
+                <Card.Img className="land-images" variant="top" src={hands} loading="lazy"/>
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">
@@ -50,7 +50,7 @@ export default function Panel2() {
               </Card>
               
               <Card id="land-card">
-                <Card.Img className="land-images" variant="top" src={money} />
+                <Card.Img className="land-images" variant="top" src={money} loading="lazy"/>
                 <Card.Body>
                   
                   <Card.Text id="rs-2-text">

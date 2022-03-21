@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   return (
     <div className="background-white">
-      <Header buttonFunc={handleLogout} buttonText={"Log out"}/>
+      <Header buttonFunc={handleLogout} buttonText={"SIGN OUT"}/>
       
       <div style={{ marginLeft: "113px", paddingTop: "40px"}}>
           <h3 className="mb-2 ts"><strong>Your Account</strong></h3>
@@ -51,21 +51,23 @@ export default function Dashboard() {
           Change account username and password
           </Card.Text></div>
           </Row>
+          <a href="/update-profile" class="stretched-link"></a>
         </Card.Body>
       </Card>
-      <a style={{textDecoration:"none"}} href="/order">
+      
       <Card  id="dashboard-card">
         <Card.Body>
           <Row>
           <Image className="dash-images" src={moreInf}/ ><div style={{marginLeft:"5px"}}>
-          <Card.Title >Order RGear</Card.Title>
+          <Card.Title >Digital content and devices.</Card.Title>
           <Card.Text>
-            Fill order details to get the latest RGear Vr <br/>headset for free.
+          More info about the technology and Rworld.. 
           </Card.Text></div>
           </Row>
+          <a href="/" class="stretched-link"></a>
         </Card.Body>
       </Card>
-      </a>
+    
       </CardGroup>
       <CardGroup>
       <Card  id="dashboard-card">
@@ -77,17 +79,19 @@ export default function Dashboard() {
             Fill order details to get the latest RGear Vr <br/>headset for free.
           </Card.Text></div>
           </Row>
+          <a href="/order" class="stretched-link"></a>
         </Card.Body>
       </Card>
       <Card id="dashboard-card">
         <Card.Body>
           <Row>
           <Image className="dash-images" src={helpIcon}/ ><div style={{marginLeft:"5px"}}>
-          <Card.Title >Primary Card Title</Card.Title>
+          <Card.Title >Help</Card.Title>
           <Card.Text>
-            Some quick example text to 
+          Contact our team to resolve any issue <br/>regarding Rgear and the app. 
           </Card.Text></div>
           </Row>
+          <a href="/contact-us" class="stretched-link"></a>
         </Card.Body>
       </Card>
       </CardGroup>

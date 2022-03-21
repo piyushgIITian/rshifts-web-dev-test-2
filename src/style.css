@@ -46,7 +46,7 @@
     .features{
         display:flex;
         position: relative;
-        left:7%;
+        
         justify-content: center;
         align-items: center;
     }
@@ -461,8 +461,32 @@ color: #917FED;
     height: 25px;
     width: 25px;
 }
+.go-top {
+    right:0;
+    bottom:50px;
+    position: fixed;
+    z-index: 10000;
+ 
+}
+.go-top-text{
+    transform: rotate(270deg);
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #fba628;
+}
 
 
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: auto;
+    content: "";
+    background-color: rgba(0,0,0,0);
+}
 
 
 
@@ -540,6 +564,9 @@ color: #917FED;
 
 
 @media screen and (max-width: 1000px) {
+    #panel-2-row{
+        flex-direction: column;
+    }
     .arrow-right{
         display: none;
     }

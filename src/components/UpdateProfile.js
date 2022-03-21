@@ -44,7 +44,10 @@ export default function UpdateProfile() {
   return (
     <>
       <div className="text-center">
+        <a href="/">
+
         <Image src="/logogroup.png"/ >
+        </a>
       </div>
       <Card className="shadow p-3 mb-5 bg-white" style={{borderRadius: "20px"}}>
         <Card.Body>
