@@ -73,6 +73,29 @@
 .su-form-input{
     width:300px
 }
+.currentuser{
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.youraccount{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
 
 .facebook-login{
     margin-top: 10px;

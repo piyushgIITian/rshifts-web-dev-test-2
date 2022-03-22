@@ -20,7 +20,7 @@ export default function OrderPage() {
               <Image src="/logogroup.png" />
             </a>
           </div>
-          <Card className="shadow p-3 mb-5 bg-white align-items-center " style={{ borderRadius: "20px" }}>
+          <Card className="shadow p-3 mb-5 bg-white align-items-center justify-content-center " style={{ borderRadius: "20px" }}>
             <Card.Body>
               <h2 className="text-center mb-4 " style={{ fontSize: '22px', fontWeight: 'bold' }}>Order Details</h2>
               <Form>

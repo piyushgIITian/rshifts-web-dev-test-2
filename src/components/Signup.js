@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Image } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-import { getAuth, signInWithPopup, FacebookAuthProvider  } from "firebase/auth";
 
 import "../style.css"
 
@@ -12,29 +11,13 @@ export default function Signup() {
   const usernameRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
-  const { signup} = useAuth()
+  const { signup, updateName} = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
   const history = useHistory()
-  const auth = getAuth();
-  const provider = new FacebookAuthProvider();
+  
 
-  async function handleFacebook(e){
-    e.preventDefault()
-    await signInWithPopup(auth, provider)
-    .then((result) => {
-      const user = result.user;
-      const credential = FacebookAuthProvider.credentialFromResult(result);
-      const accessToken = credential.accessToken;
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      const email = error.email;
-      const credential = FacebookAuthProvider.credentialFromError(error);
-      alert(errorCode,errorMessage,email,credential)
-    });
-  } 
+  
   
   async function handleSubmit(e) {
     e.preventDefault()
@@ -44,7 +27,8 @@ export default function Signup() {
     try {
       setError("")
       setLoading(true)
-      await signup(emailRef.current.value, passwordRef.current.value)
+      await signup(emailRef.current.value, passwordRef.current.value);
+      await updateName(usernameRef.current.value);
       history.push("/dashboard")
     } catch {
       setError("Failed to create an account")
@@ -92,9 +76,6 @@ export default function Signup() {
             {/* </form> */}
             </div>
           </Form>
-          {/* <div className='facebook-login p-3 hvr-float-shadow' id="submit" role="button"
-                  onClick={handleFacebook}  >
-          </div> */}
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">

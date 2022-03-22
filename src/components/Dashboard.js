@@ -31,17 +31,14 @@ export default function Dashboard() {
     <div className="background-white">
       <Header buttonFunc={handleLogout} buttonText={"SIGN OUT"}/>
       
-      <div style={{ marginLeft: "113px", paddingTop: "40px"}}>
-          <h3 className="mb-2 ts"><strong>Your Account</strong></h3>
+      <div style={{ marginLeft: "113px", paddingTop: "40px",width:"fit-content"}}>
+          <div className="youraccount">Your Account</div>
           {error && <Alert variant="danger">{error}</Alert>}
-          {currentUser.displayName}
-          {/* <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
-            Update Profile
-          </Link> */}
+          <div className="currentuser">{currentUser.displayName}</div>
       </div>
       
       <Container >
-      <CardGroup  style={{marginTop:"30px", width:"100%",boxSizing:"border-box"}}>
+      <CardGroup  style={{marginTop:"60px",marginBottom:"30px", width:"100%",boxSizing:"border-box"}}>
       <Card id="dashboard-card">
         <Card.Body>
           <Row>
@@ -69,7 +66,7 @@ export default function Dashboard() {
       </Card>
     
       </CardGroup>
-      <CardGroup>
+      <CardGroup style={{marginBottom:"60px"}}>
       <Card  id="dashboard-card">
         <Card.Body>
           <Row>

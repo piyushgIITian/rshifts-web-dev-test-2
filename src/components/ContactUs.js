@@ -19,14 +19,14 @@ export default function ContactUs() {
     e.preventDefault();
     console.log("you clicked submit");
     console.log(nameRef.current.value);
-    axios.post('https://rshifts.herokuapp.com/send',{
+    axios.post('https://localhost:5000/send',{
       name: nameRef.current.value,
       email:emailRef.current.value,
       subject:subjectRef.current.value,
       message:messageRef.current.value,
    })
       .then((response)=>{
-        console.log(response.data)
+        console.log("hello"+response.data)
         if (response.data === 'done'){
             alert("Message Sent."); 
             resetForm()
