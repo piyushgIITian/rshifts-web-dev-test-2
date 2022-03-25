@@ -11,7 +11,7 @@ import Panel2 from './landing-page/Panel2'
 import Panel3 from './landing-page/Panel3'
 import Panel4 from './landing-page/Panel4'
 import Panel5 from './landing-page/Panel5'
-import Subscribe from './landing-page/subscribe'
+import Subscribe from './landing-page/Subscribe'
 
 
 export default function LandingPage() {

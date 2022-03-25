@@ -18,7 +18,7 @@ export default function ContactUs() {
   }
   async function handleSubmit(e){
     e.preventDefault(); // Prevents default refresh by the browser
-
+    // console.log(e.target)
     await emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, process.env.REACT_APP_EMAILJS_USER_ID)
     .then((result) => {
     alert("Message Sent, We will get back to you shortly", result.text);
