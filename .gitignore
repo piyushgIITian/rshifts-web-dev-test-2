@@ -1,6 +1,6 @@
 /node_modules
 
 playwright-report/
-
+/backend
 *.env
 *.local

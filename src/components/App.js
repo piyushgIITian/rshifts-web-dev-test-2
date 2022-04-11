@@ -10,7 +10,7 @@ import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
 import LandingPage from "./LandingPage"
 import ContactUs from "./ContactUs"
-import OrderPage from "./OrderPage"
+import OrderPage from "./Order"
 
 import "../style.css"
 
