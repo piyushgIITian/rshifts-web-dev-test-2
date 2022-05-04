@@ -6,6 +6,8 @@ import { useHistory } from 'react-router-dom';
 
 const formStyle={ height: "45px", width: "300px" };
 export default function OrderPage() {
+
+
   const history = useHistory();
   async function handleSubmit(e) {
     e.preventDefault();
@@ -40,7 +42,7 @@ export default function OrderPage() {
         <Card className="shadow p-3 mb-5 bg-white align-items-center justify-content-center " style={{ borderRadius: "20px" }}>
           <Card.Body>
             <h2 className="text-center mb-4 " style={{ fontSize: '22px', fontWeight: 'bold' }}>Order Details</h2>
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit} id="orderForm">
               <Row>
                 <Col>
                   <Form.Group id="firstName" className="mb-4"   >
@@ -78,7 +80,7 @@ export default function OrderPage() {
                 </Col>
               </Row>
               <div className="text-center ">
-                <Button className="px-3" id="rs-button" type="submit">
+                <Button className="px-3" id="orderSubmit" style={{ background: "#7962F5",borderRadius: "10px", height: "41px" }} type="submit">
                   ORDER NOW
                 </Button>
               </div>
